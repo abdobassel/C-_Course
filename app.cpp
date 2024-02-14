@@ -1,24 +1,22 @@
 #include <iostream>
+#include <cctype>
 using namespace std;
 int main()
 {
+    string name = "ElZeRo";
 
-    float fl = 10.1;
-    cout << sizeof(fl) << endl; // 4 اصغر حجما
+    for (int ch = 0; ch < 6; ch++)
+    {
+        if (char(isupper(name[ch])))
+        {
 
-    double db = 100.1;
-    cout << sizeof(db) << endl; // 8 bt من الدبل
-
-    // test #lesson 20
-    char character;
-    int Askinum;
-    cin >> character;
-
-    cout << " your character equal numaski " << int(character) << endl;
-
-    cin >> Askinum;
-
-    cout << " your num equal char " << char(Askinum) << endl;
+            cout << char(tolower(name[ch])) << "\n";
+        }
+        else
+        {
+            cout << char(toupper(name[ch])) << "\n";
+        }
+    }
 
     return 0;
 }
