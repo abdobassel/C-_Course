@@ -69,9 +69,19 @@ int main()
 
     cin >> b;
 
-    double area = pi * (b * b);
+    // double area = pi * (b * b);
+    // double area = (pi * b * b) / 4; // all r circle
+    double area = (b * b) / (4 * pi); // محيط الدايرة = b
 
     cout << " مساحة الدايرة تساوي " << area << "\n";
+
+    int numo;
+    cin >> numo;
+
+    for (int i = 1; i < numo + 1; i++)
+    {
+        cout << i << "\n";
+    }
 
     return 0;
 }
