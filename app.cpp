@@ -61,15 +61,17 @@ int main()
     {
         cout << "Fail";
     }
-    int a, b;
-    cout << "مساحة المثلث = نصف القاعدة * الارتفاع"
+    float pi = 3.14;
+
+    int b;
+    cout << "enter num to 3.14 * num *num = circle area"
          << "\n";
-    cin >> a;
+
     cin >> b;
 
-    int area = (0.5 * a) * b;
+    double area = pi * (b * b);
 
-    cout << " مساحة المثلث تساوي " << area << "\n";
+    cout << " مساحة الدايرة تساوي " << area << "\n";
 
     return 0;
 }
