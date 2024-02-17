@@ -33,26 +33,23 @@ int main()
     }
     cout << "\n";
     cout << add(5);
-    int age;
-    bool hasldriver;
-    bool haswasta;
 
-    cout << "your age \n";
+    string fname;
+    string lname;
 
-    cin >> age;
-    cout << "li driver? 1 == yes || 0 == no \n";
-    cin >> hasldriver;
-    cout << "wasta ? 1 == yes || 0 == no \n";
-    cin >> haswasta;
+    cout << "first name ? \n";
 
-    if (age >= 21 && hasldriver == true || haswasta == true)
-    {
-        cout << "hired";
-    }
-    else
-    {
-        cout << "regicted";
-    }
+    cin >> fname;
+    cout << "last name ? \n";
+    cin >> lname;
+
+    cout << fname << " " << lname << "\n";
+
+    int num;
+    cout << "enter num and get half of num \n";
+    cin >> num;
+
+    cout << " half of " << num << " is " << num / 2;
 
     return 0;
 }
