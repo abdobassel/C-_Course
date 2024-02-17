@@ -37,19 +37,17 @@ int main()
     string fname;
     string lname;
 
-    cout << "first name ? \n";
+    cout << "enter any 3 nums \n";
+    int n1, n2, n3;
 
-    cin >> fname;
-    cout << "last name ? \n";
-    cin >> lname;
+    cin >> n1;
+    cin >> n2;
+    cin >> n3;
+    cout << "your avrg " << n1 << n2 << n3;
+    int sum = n1 + n2 + n3;
+    int avrg = sum / 3;
 
-    cout << fname << " " << lname << "\n";
-
-    int num;
-    cout << "enter num and get half of num \n";
-    cin >> num;
-
-    cout << " half of " << num << " is " << num / 2;
+    cout << " equal " << avrg;
 
     return 0;
 }
