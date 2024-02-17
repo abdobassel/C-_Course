@@ -1,4 +1,7 @@
 #include <iostream>
+#include <math.h>
+#include <cmath>
+
 #include <cctype>
 using namespace std;
 
@@ -44,10 +47,29 @@ int main()
     cin >> n2;
     cin >> n3;
     cout << "your avrg " << n1 << n2 << n3;
+
     int sum = n1 + n2 + n3;
     int avrg = sum / 3;
 
     cout << " equal " << avrg;
+
+    if (avrg <= 50)
+    {
+        cout << "PAss";
+    }
+    else
+    {
+        cout << "Fail";
+    }
+    int a, b;
+    cout << "مساحة المثلث = نصف القاعدة * الارتفاع"
+         << "\n";
+    cin >> a;
+    cin >> b;
+
+    int area = (0.5 * a) * b;
+
+    cout << " مساحة المثلث تساوي " << area << "\n";
 
     return 0;
 }
