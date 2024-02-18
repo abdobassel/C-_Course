@@ -75,19 +75,28 @@ int main()
     // double area = (b * b) / (4 * pi); // محيط الدايرة = b
 
     // cout << " مساحة الدايرة تساوي " << area << "\n";
-    int num;
-    int sum = 0;
+
+    int numofdays;
+
+    int numofhours;
+
+    int numofmin;
+
+    int numofsecond;
+    double totalseconds;
     cout << "\n "
-         << "Enter num ??? ";
+         << "Enter days and hours and mun and seconds number ??? \n";
 
-    cin >> num;
-    do
-    {
-        sum += num;
-        cin >> num;
-    } while (num != -99);
+    cin >> numofdays >> numofhours >> numofmin >> numofsecond;
 
-    cout << sum;
+    totalseconds = (numofdays * 24 * 60 * 60) + (numofhours * 60 * 60) + (numofmin * 60) + numofsecond;
+
+    cout << "Your seconds " << totalseconds;
+
+    //  total = pill * 1.1;   // add 10% => 1.1
+    // total = total * 1.16; // 16%
+
+    // cout << "Total pill is " << total;
 
     return 0;
 }
