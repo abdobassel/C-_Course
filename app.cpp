@@ -35,46 +35,59 @@ int main()
             cout << char(toupper(name[ch]));
         }
     }
-    cout << "\n";
-    cout << add(5);
+    // cout << "\n";
+    // cout << add(5);
 
     string fname;
     string lname;
 
-    cout << "enter any 3 nums \n";
-    int n1, n2, n3;
+    // cout << "enter any 3 nums \n";
+    //  int n1, n2, n3;
 
-    cin >> n1;
-    cin >> n2;
-    cin >> n3;
-    cout << "your avrg " << n1 << n2 << n3;
+    // cin >> n1;
+    // cin >> n2;
+    // cin >> n3;
+    // cout << "your avrg " << n1 << n2 << n3;
 
-    int sum = n1 + n2 + n3;
-    int avrg = sum / 3;
+    // int sum = n1 + n2 + n3;
+    // int avrg = sum / 3;
 
-    cout << " equal " << avrg;
+    // cout << " equal " << avrg;
 
-    if (avrg <= 50)
-    {
-        cout << "PAss";
-    }
-    else
-    {
-        cout << "Fail";
-    }
+    // if (avrg <= 50)
+    //{
+    //  cout << "PAss";
+    //}
+    // else
+    //{
+    //  cout << "Fail";
+    //}
     float pi = 3.14;
 
-    int b;
-    cout << "enter num to 3.14 * num *num = circle area"
-         << "\n";
+    // int b;
+    // cout << "enter num to 3.14 * num *num = circle area"
+    //    << "\n";
 
-    cin >> b;
+    //    cin >> b;
 
     // double area = pi * (b * b);
     // double area = (pi * b * b) / 4; // all r circle
-    double area = (b * b) / (4 * pi); // محيط الدايرة = b
+    // double area = (b * b) / (4 * pi); // محيط الدايرة = b
 
-    cout << " مساحة الدايرة تساوي " << area << "\n";
+    // cout << " مساحة الدايرة تساوي " << area << "\n";
+    int num;
+    int sum = 0;
+    cout << "\n "
+         << "Enter num ??? ";
+
+    cin >> num;
+    do
+    {
+        sum += num;
+        cin >> num;
+    } while (num != -99);
+
+    cout << sum;
 
     return 0;
 }
