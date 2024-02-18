@@ -13,6 +13,7 @@ int add(int num)
     }
     return num + add(num - 1);
 }
+
 int main()
 {
     string name = "ElZeRo";
@@ -74,14 +75,6 @@ int main()
     double area = (b * b) / (4 * pi); // محيط الدايرة = b
 
     cout << " مساحة الدايرة تساوي " << area << "\n";
-
-    int numo;
-    cin >> numo;
-
-    for (int i = 1; i < numo + 1; i++)
-    {
-        cout << i << "\n";
-    }
 
     return 0;
 }
